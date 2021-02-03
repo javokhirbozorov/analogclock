@@ -1,0 +1,91 @@
+/* html, body, .container {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url(../img/clock_face.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.hands {
+    position: absolute;
+    top: 25%;
+    left: 45.5%; 
+    height: 68px;
+} */
+html{
+    background-color: #1E1E1E
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+@font-face {
+    font-family: digital1;
+    src: url(../fonts/digital-7.ttf)
+}
+
+.analog_clock {
+    width: 140px;
+    height: 140px;
+    margin-left: 45%;
+    margin-top: 12%;
+    color: #18CDDD;
+    
+}
+
+#clock_face {
+    stroke: #18CDDD;
+    stroke-width: 3px;
+    fill:#1E1E1E;
+    margin-bottom: 20px;
+
+}
+
+#h-hand, #m-hand, #s-hand, #s-tail {
+    stroke:#18CDDD;
+    stroke-linecap: round;
+    
+}
+#h-hand {
+    stroke-width: 3.5px;
+}
+
+#m-hand {
+    stroke-width: 2px;
+}
+
+#s-hand {
+    stroke-width: 1px;
+}
+
+.time_text {
+    text-align: center;
+    margin-top: 30px;
+    font-family: digital1;
+}
+
+@font-face {
+    font-family: digital;
+    src: url(../fonts/square_sans_serif_7.ttf)
+}
+
+#name{
+    font-family: digital;
+    font-size: 20px;
+    margin-top: 130px;
+    color: #18CDDD;
+    text-align: center;
+}

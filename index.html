@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <script type="text/javascript" src="js/main.js"></script>
+            <link rel="stylesheet" href="css/style.css">
+        <title>Analog Clock</title>
+</head>
+<body>
+    <!--  "OLD ONE" 
+        <div class="container">
+            <div class="clock">
+                <img id="hourHand" class="hands" src="img/hour_hand.png" alt="hour">
+                <img id="minuteHand" class="hands" src="img/minute_hand.png" alt="">
+                <img id="secondHand"class="hands" src="img/second_hand3.png" alt="">
+            </div> 
+        </div>-->
+        
+        <!-- NEW  -->
+        <div class="analog_clock">
+            <svg width = "140" height = "140">
+                <circle id="clock_face" cx="70" cy="70" r=65 stroke="green" stroke-width="10"/>
+                <line id="h-hand" x1="70" y1="70" x2="70" y2="38"/> 
+                <line id="m-hand" x1="70" y1="70" x2="70" y2="20"/> 
+                <line id="s-hand" x1="70" y1="70" x2="70" y2="10"/> 
+                <line id="s-tail" x1="70" y1="70" x2="70" y2="56"/> 
+                
+                <!-- PROBLEM WITH COLOR - NOT CHANGING -->
+                <!-- <text x="62" y="18">12</text>
+                <text x="126" y="76">3</text>
+                <text x="66" y="130">6</text>
+                <text x="7" y="76">9</text> -->
+            </svg>
+            <div class="time_text">
+                <span id="hr">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span id="suffix">--</span>
+            </div>
+        </div>
+        <div id="name">• Javakhir Bazarov •</div>
+        
+    </body>
+    </html>
+    
